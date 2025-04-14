@@ -6,7 +6,6 @@
   "scripts": {
     "auto": "node --watch ./auto.js",
     "car": "node --watch ./js/Car.js",
-    "index": "node --watch ./index.js",
     "oop": "node --watch ./index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
