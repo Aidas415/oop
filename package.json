@@ -4,6 +4,8 @@
   "type": "module",
   "main": "index.js",
   "scripts": {
+    "static": "node --watch ./static.js",
+    "animals": "node --watch ./animals.js",
     "auto": "node --watch ./auto.js",
     "car": "node --watch ./js/Car.js",
     "oop": "node --watch ./index.js",
