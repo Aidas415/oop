@@ -20,7 +20,7 @@ Elektronika:
    Smart phone:
       - Samsung smart phone
       - Apple smart phone
-      -Nokia smart phone
+      - Nokia smart phone
    Tablet:
       - Samsung tablet
       - Xiomi tablet
@@ -28,7 +28,7 @@ Elektronika:
       - Asus
       - Lenovo
       - IBM
-
+      - Acer
 */
 
 
@@ -51,12 +51,26 @@ Animal:
 */
 
 import { Cat } from "./js/Cat.js";
-import {Dog} from "./js/Dog.js";
+import { Dog } from "./js/Dog.js";
 import { Hamster } from "./js/Hamster.js";
+import { Pike } from "./js/Pike.js";
+import { Shark } from "./js/Shark.js";
 
 const rex = new Dog ('Rex', 'black');
 const rainis = new Cat ('Rainis', 'mixed');
 const keksas = new Hamster ('Keksas', 'brown');
-console.log(rainis);
-console.log(rex);
-console.log(keksas);
+
+const antanas = new Shark('Antanas');
+const lydeka = new Pike('Lydeka');
+
+console.log(lydeka.hi());
+console.log(lydeka.grantWish('lots of cach'));
+console.log(antanas.hi());
+console.log(antanas);
+
+
+
+
+
+
+
