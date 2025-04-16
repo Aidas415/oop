@@ -1,7 +1,7 @@
 
 
 
-export class Pike extends Fish{
+export class Pike {
     grandWish(With){
         return `${this.name}: Your `
     }

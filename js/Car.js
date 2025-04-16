@@ -56,10 +56,10 @@ export class Car{
             return `Drive can not, because need some gas.`;
         }
         if (this.tank > 0) {
-            return `Drive car as long as have enouth gas.`
+            return `Drive car as long as have enouth gas.`;
         }
         if (this.travel === 600) {
-            return `For trip needed ${this.travel * this.output}l gas.`
+            return `For trip needed ${this.travel * this.output}l gas.`;
         }
 
     }

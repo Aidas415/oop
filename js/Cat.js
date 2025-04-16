@@ -1,18 +1,10 @@
 import { Pet } from "./Pet.js"
 
-export class Cat { 
+export class Cat extends Pet{ 
     constructor(name, furColor) {
-        this.name = name;
-        this.furColor = furColor;
-        this.legsCount = 4;
-        this.eyesCount = 2;
+        super(name, furColor);
+        this.sound = 'miau';
+        this.emoji = '🐈';
     }
-    hi() {
-        return `Hi, my name is ${this.name}.`;
-    }
-    voice() {
-        return `${this.name}: miau, miau 🐈🐈`
-    }
-
 }
 
