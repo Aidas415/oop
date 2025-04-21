@@ -1,4 +1,4 @@
-import { Animal } from "./Animal.js";
+import { Animal } from "../Animal.js";
 
 export class Pet extends Animal { 
     constructor(name, furColor) {

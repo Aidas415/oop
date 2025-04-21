@@ -12,6 +12,7 @@ export class Motociklai {
         this.ratai = ratai;
     }
     intro () {
-        return `Mūsų siūlomo "${this.firma}" dviračio transporto "${this.modelis}" modelis, geriausias pasirinkimas šių dienų miestų spūstyse!`
+        return `Mūsų siūlomo "${this.firma}" dviračio transporto "${this.modelis}"
+         modelis, geriausias pasirinkimas šių dienų miestų spūstyse!`
     }
 }
