@@ -1,57 +1,97 @@
-import { Audi } from "./js/Audi.js";
-import { Volkswagen } from "./js/Volkswagen.js";
-import { Renault } from "./js/Renault.js"; 
-const Q7 = new Audi ('Q7', 2024, 'juoda', 'benzinas', 'automatine', 'visureigis', 10.1, 85, 5, 2055);
-console.log(Q7);
-const touareg = new Volkswagen ('Touareg', 2020, 'raudona', 'dyzelinas', 'automatine', 'krosoveris',  8.4, 90, 5, 2070);
-//console.log(touareg);
-const espace = new Renault ('Espace', 2024, 'balta', 'benzinas-elektra', 'automatine', 'krosoveris', 4.8, 50, 7, 1625);
-//console.log(espace);
-//onsole.log(Q7.intro());
-//onsole.log(touareg.intro());
-//onsole.log(espace.intro());
+/*
+Transporto priemones:
+   Automobiliai:
+      - Audi
+      - Volksvagen
+      - Renault
+   Motociklai:
+      - Suzuki
+      - Kawasaki
+      - Jawa
+      - Vespa
+   Sunkvezimiai:
+      - Volvo
+      - Man
+      - Scania
+*/
 
-//XXXXXXX 
-console.log('-----------')
+import { Audi } from "./js/Audi.js";
+const Q7 = new Audi ('Audi', 'Q7', 2024, 'juoda');
+//console.log(Q7);
+console.log(Q7.intro());
+
+import { Volkswagen } from "./js/Volkswagen.js";
+const touareg = new Volkswagen ('Volkswagen', 'Touareg', 2020, 'raudona');
+//console.log(touareg);
+console.log(touareg.intro());
+
+import { Renault } from "./js/Renault.js"; 
+const espace = new Renault ('Renault', 'Espace', 2024, 'balta'); 
+//console.log(espace);
+console.log(espace.intro());
+
+console.log('------------')
 
 import { Suzuki } from "./js/Suzuki.js";
-
-const sfv = new Suzuki ('Suzuki', 'SFV', 2013, 'spalva', 645, 'gatvės/klasikinis', 'benzinas', 'skysciu', 207, 2);
+const sfv = new Suzuki ('Suzuki', 'SFV', 2013, 'mėlyna', 'benzinas', 2);
 //console.log(sfv);
-//console.log(sfv.intro());
+console.log(sfv.intro());
 
 import { Kawasaki } from "./js/Kawasaki.js";
-
-const gpx = new Kawasaki ('Kawasaki', 'GPX', 2010, 'oranžinė', 650, 'sportinis/kelioninis', 'benzinas', 'skysciu', 206, 2);
+const gpx = new Kawasaki ('Kawasaki', 'GPX', 2010, 'oranžinė', 'benzinas', 2);
 //console.log(gpx);
-//console.log(gpx.intro());
+console.log(gpx.intro());
 
 import { Vespa } from "./js/Vespa.js";
-
-const piaggio = new Vespa ('Vespa', 'Piaggio', 2006, 'geltona', 244, 'motoroleris/mopedas', 'benzinas', 'skysciu', 120, 2);
+const piaggio = new Vespa ('Vespa', 'Piaggio', 2006, 'geltona', 'benzinas', 2);
 //console.log(piaggio);
-//console.log(piaggio.intro());
+console.log(piaggio.intro());
 
 import { Jawa } from "./js/Jawa.js";
-
-const j350 = new Jawa ('Jawa', 'J350', 1991, 'raudona', 350, 'gatves/klasikinis', 'benzinas', 'oru', 342, 2);
+const j350 = new Jawa ('Jawa', 'J350', 1991, 'raudona', 'benzinas', 2);
 //console.log(j350);
-//console.log(j350.intro());
+console.log(j350.intro());
 
-//XXXXXXXXX
-console.log('-----------');
+console.log('--------------');
 
 import { Volvo } from "./js/Volvo.js";
-
-const volvo = new Volvo ('Volvo', 'vilkikas', 'balta', 13000, 331, 'dyzelinas', 'automatine', '4 x 2'); 
+const volvo = new Volvo ('Volvo', 2023, 'balta', '4 x 2'); 
 //console.log(volvo);
-//console.log(volvo.intro());
+console.log(volvo.intro());
 
 import { Man } from "./js/Man.js";
-
-const man = new Man ('Man', 'vilkikas', 'pilka', 12419, 346, 'dyzelinas', 'automatine', '4 x 2');
+const man = new Man ('Man', 2024, 'pilka', '4 x 2');
 //console.log(man);
-//console.log(.intro());
+console.log(man.intro());
+
+import { Scania } from "./js/Scania.js";
+const scania = new Scania ('Scania', 2022, 'balta', '4 x 2') 
+//console.log(scania);
+console.log(scania.intro());
+
+console.log('--------------')
+
+// Kuris kompanijos vilkikas galingiausias?
+/*
+const sunkvezimiai = [volvo, man, scania];
+console.log(sunkvezimiai);
+function galingiausias(sunkvezimiai) {
+    let maxPower = 0;
+    let vilkikas;
+    for (i in sunkvezimiai) {
+        if (sunkvezimiai[i].galingumas > maxPower) {
+            vilkikas = sunkvezimiai[i].galingumas;
+            console.log(vilkikas);
+
+        }
+
+    }
+    return vilkikas;
+}
+*/
+
+
+
 
 
 
