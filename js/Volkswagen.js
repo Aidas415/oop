@@ -6,7 +6,7 @@ export class Volkswagen extends Automobiliai{
         this.kuroTipas = 'dyzelinas';
         this.transmisija = 'automatinė';
         this.kuroSanaudos = 8.4;
-        this.degaluBakas = 90;
+        this.kuroBakas = 90;
         this.sedimosvietos = 5;
         this.svoris = 2070;
     }

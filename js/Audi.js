@@ -6,7 +6,7 @@ export class Audi extends Automobiliai {
         this.kuroTipas = 'benzinas';
         this.transmisija = 'automatinė';
         this.kuroSanaudos = 10.1;
-        this.degaluBakas = 85;
+        this.kuroBakas = 85;
         this.sedimosVietos = 5;
         this.svoris = 2055;
     }   
